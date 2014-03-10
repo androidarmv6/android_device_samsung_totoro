@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="thumbnail_width">240dp</dimen>
+    <dimen name="thumbnail_height">240dp</dimen>
+    <dimen name="password_keyboard_key_height_alpha">35dp</dimen>
+    <dimen name="password_keyboard_key_height_numeric">35dp</dimen>
+    <dimen name="password_keyboard_spacebar_vertical_correction">2dp</dimen>
+    <dimen name="password_keyboard_horizontalGap">1dp</dimen>
+    <dimen name="password_keyboard_verticalGap">4dp</dimen>
+    <dimen name="keyguard_lockscreen_clock_font_size">70dp</dimen>
+    <dimen name="keyguard_lockscreen_status_line_clockfont_top_margin">2dp</dimen>
+    <dimen name="keyguard_lockscreen_status_line_clockfont_bottom_margin">2dp</dimen>
+    <dimen name="lockscreen_target_inset">25dp</dimen>
+</resources>
