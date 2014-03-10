@@ -1,0 +1,68 @@
+#
+# system.prop for GT-S5360
+#
+
+# Dalvik
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.startheapsize=32m
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.dexopt-flags=m=y
+dalvik.vm.heapsize=32m
+dalvik.vm.checkjni=false
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.lockprof.threshold=500
+ro.kernel.android.checkjni=1
+dev.sfbootcomplete=0
+
+# Bluetooth
+net.bt.name=Android
+
+# RIL
+rild.libpath=/system/lib/libbrcm_ril.so
+rild.libargs=-d /dev/smd0
+ro.telephony.default_network=0
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+mobiledata.interfaces=pdp0,gprs,ppp0
+DEVICE_PROVISIONED=1
+ro.telephony.call_ring.delay=0
+ro.ril.disable.power.collapse=0
+DEVICE_PROVISIONED=1
+	
+# Display
+ro.sf.lcd_density=120
+qemu.sf.lcd_density=120
+video.accelerate.hw=1
+ro.opengles.version=131072
+media.stagefright.enable-player=true
+
+# Google Location
+ro.com.google.locationfeatures=1
+ro.com.google.networklocation=1
+
+# Wifi interface
+wifi.interface=eth0
+wifi.supplicant_scan_interval=15
+
+# USB / SD card
+persist.service.usb.setting=0
+persist.sys.vold.switchexternal=1
+
+# Statgefright
+media.stagefright.enable-player=true
+ro.media.dec.jpeg.memcap=10000000
+
+# Performance Tweaks
+ro.compcache.default=0
+persist.sys.use_dithering=0
+view.fading_edge_length=8v
+view.minimum_fling_velocity=25
+view.scroll_friction=0.008
+view.touch_slop=15 X
+debug.composition.type=mdp
+windowsmgr.max_events_per_sec=150
+debug.performance.tuning=1
+
+#Tweaks
+ro.setupwizard.enable_bypass=1
+persist.sys.purgeable_assets=1

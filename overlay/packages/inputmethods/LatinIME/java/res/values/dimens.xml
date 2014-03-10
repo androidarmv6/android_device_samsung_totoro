@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- key_preview_backing_height = more_suggestions_row_height * max_more_suggestions_row -->
+    <dimen name="key_preview_backing_height">120dip</dimen>
+</resources>
