@@ -22,6 +22,10 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/totoro/overlay
 # Add LDPI assets, in addition to MDPI
 PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
 
+## LDPI assets
+PRODUCT_AAPT_CONFIG := normal mdpi ldpi
+PRODUCT_AAPT_PREF_CONFIG :=ldpi
+
 # Prebuilt Kernel - DELETE from the package
 ifeq ($(TARGET_PREBUILT_KERNEL),)
     LOCAL_KERNEL := device/samsung/totoro/prebuilt/kernel

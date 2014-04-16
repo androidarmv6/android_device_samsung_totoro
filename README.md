@@ -1,6 +1,4 @@
-Device Galaxy Ace i - CyanogenMod 9.1
+Device Galaxy Y - CyanogenMod 9.1
 =====================================
 
-Device tree for Samsung Galaxy Ace i S5830i, s5830M, s5830C - CM9.1
-
-Maintainer: Bieltv.3
+Device tree for Samsung Galaxy Y S5360 - CM9.1

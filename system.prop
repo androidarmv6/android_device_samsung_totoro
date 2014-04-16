@@ -2,67 +2,76 @@
 # system.prop for GT-S5360
 #
 
-# Dalvik
-dalvik.vm.stack-trace-file=/data/anr/traces.txt
-dalvik.vm.startheapsize=32m
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.dexopt-flags=m=y
-dalvik.vm.heapsize=32m
-dalvik.vm.checkjni=false
-dalvik.vm.execution-mode=int:jit
+## Dalvik
 dalvik.vm.lockprof.threshold=500
-ro.kernel.android.checkjni=1
-dev.sfbootcomplete=0
+dalvik.vm.dexopt-flags=m=y
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=32m
+dalvik.vm.heapsize=64m
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.verify_bytecode=false
+dalvik.vm.checkjni=0
 
-# Bluetooth
-net.bt.name=Android
-
-# RIL
+## RIL
 rild.libpath=/system/lib/libbrcm_ril.so
 rild.libargs=-d /dev/smd0
 ro.telephony.default_network=0
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
-mobiledata.interfaces=pdp0,gprs,ppp0
-DEVICE_PROVISIONED=1
+ro.telephony.ril_class=SamsungRIL
+mobiledata.interfaces=pdp0,eth0,gprs,ppp0
 ro.telephony.call_ring.delay=0
 ro.ril.disable.power.collapse=0
 DEVICE_PROVISIONED=1
-	
-# Display
-ro.sf.lcd_density=120
-qemu.sf.lcd_density=120
-video.accelerate.hw=1
-ro.opengles.version=131072
-media.stagefright.enable-player=true
 
-# Google Location
+## Display
+ro.sf.lcd_density=120
+ro.opengles.version=131072
+
+## Google Location
 ro.com.google.locationfeatures=1
 ro.com.google.networklocation=1
 
-# Wifi interface
+## Wifi interface
 wifi.interface=eth0
 wifi.supplicant_scan_interval=15
 
-# USB / SD card
-persist.service.usb.setting=0
-persist.sys.vold.switchexternal=1
+## USB / SD card
+persist.sys.usb.config=adb,mass_storage
+persist.service.adb.enable=1
+ro.vold.umsdirtyratio=20
 
-# Statgefright
-media.stagefright.enable-player=true
-ro.media.dec.jpeg.memcap=10000000
-
-# Performance Tweaks
-ro.compcache.default=0
-persist.sys.use_dithering=0
-view.fading_edge_length=8v
+## View configuration for QVGA.
+view.fading_edge_length=8
+view.touch_slop=15
 view.minimum_fling_velocity=25
+ro.max.fling_velocity=4000
 view.scroll_friction=0.008
-view.touch_slop=15 X
-debug.composition.type=mdp
-windowsmgr.max_events_per_sec=150
-debug.performance.tuning=1
 
-#Tweaks
-ro.setupwizard.enable_bypass=1
-persist.sys.purgeable_assets=1
+## A-GPS fix
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
+## Memory
+sys.mem.max_hidden_apps=10
+
+sys.mem.FOREGROUND_APP_ADJ=0
+sys.mem.VISIBLE_APP_ADJ=3
+sys.mem.PERCEPTIBLE_APP_ADJ=6
+sys.mem.BACKUP_APP_ADJ=10
+sys.mem.HIDDEN_APP_MIN_ADJ=12
+sys.mem.HIDDEN_APP_MAX_ADJ=15
+
+sys.mem.FOREGROUND_APP_MEM=8192
+sys.mem.VISIBLE_APP_MEM=12288
+sys.mem.PERCEPTIBLE_APP_MEM=30720
+sys.mem.BACKUP_APP_MEM=36864
+sys.mem.HIDDEN_APP_MIN_MEM=41984
+sys.mem.HIDDEN_APP_MAX_MEM=48128
+
+ro.HOME_APP_ADJ=1
+
+## Google's location features
+#ro.com.google.locationfeatures=1
+#ro.com.google.networklocation=1
