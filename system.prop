@@ -20,6 +20,7 @@ ro.telephony.default_network=0
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.telephony.ril_class=SamsungRIL
+ro.telephony.ril.v3=icccardstatus,datacall,signalstrength,facilitylock
 mobiledata.interfaces=pdp0,eth0,gprs,ppp0
 ro.telephony.call_ring.delay=0
 ro.ril.disable.power.collapse=0
