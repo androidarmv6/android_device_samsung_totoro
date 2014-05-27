@@ -26,6 +26,8 @@ PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
 PRODUCT_AAPT_CONFIG := normal mdpi ldpi
 PRODUCT_AAPT_PREF_CONFIG :=ldpi
 
+$(call inherit-product, device/ldpi-common/ldpi.mk)
+
 # Prebuilt Kernel - DELETE from the package
 ifeq ($(TARGET_PREBUILT_KERNEL),)
     LOCAL_KERNEL := device/samsung/totoro/prebuilt/kernel
