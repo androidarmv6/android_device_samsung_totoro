@@ -45,7 +45,7 @@ TARGET_PREBUILT_KERNEL				:= device/samsung/totoro/prebuilt/kernel
 #TARGET_KERNEL_CONFIG := cyanogenmod_totoro_defconfig
 
 # Kernel defines
-BOARD_NAND_PAGE_SIZE				:= 4096 -s 128
+BOARD_NAND_PAGE_SIZE				:= 4096
 BOARD_KERNEL_BASE				:= 0x81600000
 BOARD_KERNEL_PAGESIZE				:= 4096
 BOARD_PAGE_SIZE					:= 0x00001000
