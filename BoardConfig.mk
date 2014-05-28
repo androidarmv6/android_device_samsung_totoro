@@ -38,8 +38,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE		:= 206831616
 BOARD_FLASH_BLOCK_SIZE				:= 131072
 BOARD_LDPI_RECOVERY				:= true
 
-TARGET_RECOVERY_FSTAB				:= device/samsung/totoro/recovery/recovery.fstab
-
 # Prebuilt kernel NOTE: Delete from package
 TARGET_PREBUILT_KERNEL				:= device/samsung/totoro/prebuilt/kernel
 #TARGET_KERNEL_CONFIG := cyanogenmod_totoro_defconfig
