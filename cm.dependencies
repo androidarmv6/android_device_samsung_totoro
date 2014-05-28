@@ -1,0 +1,18 @@
+[
+ {
+   "repository": "android_device_samsung_bcm21553-common",
+   "target_path": "device/samsung/bcm21553-common"
+ }, {
+   "repository": "android_hardware_broadcom_brcm_usrlib",
+   "target_path": "hardware/broadcom/brcm_usrlib"
+ }, {
+   "repository": "android_hardware_broadcom_fmradio",
+   "target_path": "hardware/broadcom/fmradio"
+ }, {
+   "repository": "android_kernel_samsung_bcm21553-common",
+   "target_path": "kernel/samsung/bcm21553-common"
+ }, {
+   "repository": "android_vendor_samsung",
+   "target_path": "vendor/samsung"
+ }
+]
