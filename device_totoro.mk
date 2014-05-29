@@ -24,7 +24,7 @@ PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
 
 ## LDPI assets
 PRODUCT_AAPT_CONFIG := normal mdpi ldpi
-PRODUCT_AAPT_PREF_CONFIG :=ldpi
+PRODUCT_AAPT_PREF_CONFIG := ldpi
 
 $(call inherit-product, device/ldpi-common/ldpi.mk)
 
