@@ -28,12 +28,3 @@ PRODUCT_AAPT_PREF_CONFIG := ldpi
 
 $(call inherit-product, device/ldpi-common/ldpi.mk)
 
-# Prebuilt Kernel - DELETE from the package
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/samsung/totoro/prebuilt/kernel
-else
-    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
