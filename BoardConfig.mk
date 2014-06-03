@@ -22,6 +22,9 @@ LOCAL_PATH:= $(call my-dir)
 
 include device/samsung/bcm21553-common/BoardConfigCommon.mk
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/totoro/bluetooth
+
 # Board
 TARGET_BOARD_PLATFORM				:= bcm21553
 TARGET_BOOTLOADER_BOARD_NAME 			:= totoro
