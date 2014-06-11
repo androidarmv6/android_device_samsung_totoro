@@ -18,19 +18,17 @@
 # Product-specific compile-time definitions.
 #
 
-LOCAL_PATH:= $(call my-dir)
-
+# Import the bcm21553-common BoardConfigCommon.mk
 include device/samsung/bcm21553-common/BoardConfigCommon.mk
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/totoro/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR	:= device/samsung/totoro/bluetooth
 
 # Board
 TARGET_BOARD_PLATFORM				:= bcm21553
 TARGET_BOOTLOADER_BOARD_NAME 			:= totoro
 
 # Recovery
-BOARD_BML_RECOVERY				:= /dev/block/bml8
 BOARD_BOOTIMAGE_PARTITION_SIZE			:= 7357568
 BOARD_RECOVERYIMAGE_PARTITION_SIZE		:= 7357568
 BOARD_SYSTEMIMAGE_PARTITION_SIZE		:= 241172480
@@ -39,10 +37,3 @@ BOARD_LDPI_RECOVERY				:= true
 
 # Kernel config
 TARGET_KERNEL_CONFIG				:= cyanogenmod_totoro_defconfig
-
-# Kernel defines
-BOARD_NAND_PAGE_SIZE				:= 4096
-BOARD_KERNEL_BASE				:= 0x81600000
-BOARD_KERNEL_PAGESIZE				:= 4096
-BOARD_PAGE_SIZE					:= 0x00001000
-BOARD_KERNEL_CMDLINE				:= 
