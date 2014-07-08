@@ -38,3 +38,6 @@ BOARD_USE_CUSTOM_RECOVERY_FONT			:= "<font_7x16.h>"
 
 # Kernel config
 TARGET_KERNEL_CONFIG				:= cyanogenmod_totoro_defconfig
+
+# OTA override
+TARGET_OTA_ASSERT_DEVICE			:= totoro,GT-S5360,gt-s5360,GT-S5369,gt-s5369
