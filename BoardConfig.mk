@@ -41,3 +41,6 @@ TARGET_KERNEL_CONFIG				:= cyanogenmod_totoro_defconfig
 
 # OTA override
 TARGET_OTA_ASSERT_DEVICE			:= totoro,GT-S5360,GT-S5360B,GT-S5360L,GT-S5369
+
+# TWRP
+DEVICE_RESOLUTION := 240x320
