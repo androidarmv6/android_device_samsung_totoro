@@ -1,6 +1,3 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Inherit device configuration for totoro
 $(call inherit-product, device/samsung/totoro/full_totoro.mk)
 
